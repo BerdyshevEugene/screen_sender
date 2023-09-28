@@ -32,8 +32,6 @@ class ScreenshotThread(QThread):
     @pyqtSlot()
     def capture_screenshot(self):
         timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-        default_file_name = f'screenshot_{timestamp}.jpg'
-
         time.sleep(0.2)
 
         options = QFileDialog.Options()
@@ -41,7 +39,6 @@ class ScreenshotThread(QThread):
 
         name, _ = QFileDialog.getSaveFileName(
             None, 'Сохранить файл', '', 'Images (*.png *.jpg)', options=options)
-
         time.sleep(0.2)
 
         if name:
@@ -57,7 +54,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.setMinimumSize(QSize(500, 200))
-        self.setWindowTitle('Click click screen')
+        self.setWindowTitle('Screen sender')
         central_widget = QWidget(self)
         self.setCentralWidget(central_widget)
 
