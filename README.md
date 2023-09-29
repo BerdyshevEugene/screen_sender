@@ -1,5 +1,5 @@
 # Screen_Sender
-![Screenshot](screenshot.png)
+![Screenshot](screenshot_ver.1.1.png)
 ## Программа для захвата скриншотов и сохранения в заданной директории
 
 ## Структура проекта:
@@ -30,7 +30,7 @@ pyinstaller --noconfirm --noconsole --onefile --name=screen_sender --icon=media/
 
 ## Остальная информация 
 
-ver. 1.0.0
+ver. 1.1.0
 
 CompanyName: GMG
 
@@ -38,7 +38,7 @@ FileDescription: Screen sender
 
 InternalName: Click_click_screen
 
-LegalCopyright: © GMG. All rights reserved.
+LegalCopyright: © GMG. All rights reserved
 
 OriginalFilename: screen_sender.exe
 
