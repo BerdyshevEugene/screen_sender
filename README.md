@@ -8,8 +8,10 @@
 
 screen_sender
 │
-├── screen_sender
-│   └── main.py - основная часть программы
+├── screen_sender ── main.py - для запуска программы
+│   ├── media - содержит иконки
+│   ├── screenshots - обработчики скриншотов
+│   └── ui - окна программы
 │
 ├── requirements.txt - зависимости
 └── README.md
